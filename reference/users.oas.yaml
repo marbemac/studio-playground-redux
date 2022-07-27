@@ -43,7 +43,7 @@ paths:
                 $ref: ../models/error.yaml
       operationId: get-users-userId
       description: Retrieve the information of the user with the matching user ID.
-  /user:
+  /users:
     post:
       summary: Create New User
       operationId: post-user
@@ -90,5 +90,6 @@ paths:
                   dateOfBirth: '1996-08-24'
         description: Post the necessary fields for the API to create a new user.
       description: Create a new user.
+    parameters: []
 components:
   schemas: {}
