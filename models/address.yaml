@@ -11,8 +11,11 @@ properties:
     type: string
   state:
     type: string
+  country:
+    type: string
 required:
   - street
   - zipcode
   - city
   - state
+  - country
