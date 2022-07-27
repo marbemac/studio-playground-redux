@@ -37,6 +37,10 @@ paths:
                     signUpDate: '2019-08-24'
         '404':
           description: User Not Found
+          content:
+            application/json:
+              schema:
+                $ref: ../models/error.yaml
       operationId: get-users-userId
       description: Retrieve the information of the user with the matching user ID.
   /user:
@@ -62,8 +66,16 @@ paths:
                     createDate: '2020-11-18'
         '400':
           description: Missing Required Information
+          content:
+            application/json:
+              schema:
+                $ref: ../models/error.yaml
         '409':
           description: Email Already Taken
+          content:
+            application/json:
+              schema:
+                $ref: ../models/error.yaml
       requestBody:
         content:
           application/json:
