@@ -10,5 +10,25 @@
   ],
   "aliases": {},
   "rules": {},
-  "extendedDefault": false
+  "extends": [
+    "cHJqOjEyMzU4Ng@33"
+  ],
+  "extendedStyleguides": [
+    {
+      "id": "cHJqOjEyMzU4Ng",
+      "name": "Stoplight Style Guide",
+      "slug": "stoplight-style-guide",
+      "workspace": {
+        "slug": "apistylebook",
+        "name": "API Stylebook"
+      },
+      "icon": "robot",
+      "color": "#3898ff",
+      "description": "Default rules for Stoplight projects",
+      "latestRelease": {
+        "release": 33
+      }
+    }
+  ],
+  "extendedDefault": true
 }

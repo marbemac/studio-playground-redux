@@ -1,0 +1,23 @@
+title: invoice
+x-stoplight:
+  id: fp7kw4bhoagwo
+type: object
+properties:
+  id:
+    type: number
+    readOnly: true
+  amount:
+    type: number
+  invoice_number:
+    type: string
+    readOnly: true
+  customer_id:
+    type: number
+  billing_address:
+    $ref: ./address.yaml
+required:
+  - id
+  - amount
+  - invoice_number
+  - customer_id
+  - billing_address

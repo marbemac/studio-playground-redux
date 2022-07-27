@@ -1,0 +1,18 @@
+title: Address
+x-stoplight:
+  id: rx44vh990dtut
+type: object
+properties:
+  street:
+    type: string
+  zipcode:
+    type: string
+  city:
+    type: string
+  state:
+    type: string
+required:
+  - street
+  - zipcode
+  - city
+  - state

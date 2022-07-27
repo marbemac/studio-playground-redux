@@ -1,0 +1,19 @@
+type: object
+title: User
+x-stoplight:
+  id: 5psgeyp815xa3
+properties:
+  id:
+    type: number
+    readOnly: true
+  name:
+    type: string
+  email:
+    type: string
+  address:
+    $ref: ./address.yaml
+required:
+  - id
+  - name
+  - email
+  - address
