@@ -68,7 +68,7 @@ paths:
           headers:
             X-Rate-Limit:
               schema:
-                type: string
+                type: number
         '400':
           description: Missing Required Information
           content:
