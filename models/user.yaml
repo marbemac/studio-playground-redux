@@ -12,8 +12,11 @@ properties:
     type: string
   address:
     $ref: ./address.yaml
+  home_address:
+    $ref: ./address.yaml
 required:
   - id
   - name
   - email
   - address
+  - home_address
