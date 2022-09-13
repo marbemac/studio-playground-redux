@@ -42,6 +42,8 @@ paths:
                 $ref: ../models/error.yaml
       operationId: get-users-userId
       description: Retrieve the information of the user with the matching user ID.
+      security:
+        - API Key - 1: []
   /users:
     post:
       summary: Create New User
@@ -95,6 +97,7 @@ paths:
       description: Create a new user.
       security:
         - API Key - 1: []
+      deprecated: true
     parameters: []
 components:
   schemas: {}
