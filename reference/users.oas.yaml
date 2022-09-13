@@ -4,7 +4,9 @@ x-stoplight:
 info:
   title: Users API
   version: '1.0'
-servers: []
+servers:
+  - url: 'http://users.dev'
+    description: Development
 paths:
   '/users/{userId}':
     parameters:
