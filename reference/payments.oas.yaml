@@ -14,18 +14,11 @@ paths:
       responses: {}
       operationId: list-invoices
       parameters:
-        - name: sort
-          description: 'Can be one of `created`, `updated`, `pushed`, `full_name`.'
-          in: query
-          required: false
-          schema:
+        - $ref: '#/components/parameters/sort'
+        - schema:
             type: string
-            enum:
-              - created
-              - updated
-              - pushed
-              - full_name
-            default: created
+          in: query
+          name: skip
       requestBody:
         content:
           application/json:
@@ -33,6 +26,7 @@ paths:
               type: array
               items:
                 $ref: ../models/invoice.yaml
+        description: ''
     post:
       summary: Create Invoice
       operationId: create-invoice
