@@ -5,14 +5,14 @@ type: object
 properties:
   street:
     type: string
-  zipcode:
-    type: string
   city:
     type: string
   state:
     type: string
+  country:
+    type: string
 required:
   - street
-  - zipcode
   - city
   - state
+  - country
