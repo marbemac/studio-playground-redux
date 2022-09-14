@@ -4,7 +4,9 @@ x-stoplight:
 info:
   title: Users API
   version: '1.0'
-servers: []
+servers:
+  - url: 'http://users.dev'
+    description: Development
 paths:
   '/users/{userId}':
     parameters:
@@ -19,7 +21,7 @@ paths:
       tags: []
       responses:
         '200':
-          description: User Found
+          description: User found.
           content:
             application/json:
               schema:
@@ -42,9 +44,11 @@ paths:
                 $ref: ../models/error.yaml
       operationId: get-users-userId
       description: Retrieve the information of the user with the matching user ID.
+      security:
+        - API Key - 1: []
   /users:
     post:
-      summary: Create New User
+      summary: Create a New User
       operationId: post-user
       responses:
         '200':
@@ -66,7 +70,7 @@ paths:
           headers:
             X-Rate-Limit:
               schema:
-                type: string
+                type: number
         '400':
           description: Missing Required Information
           content:
@@ -91,10 +95,11 @@ paths:
                   lastName: Fellow
                   email: bob.fellow@gmail.com
                   dateOfBirth: '1996-08-24'
-        description: Post the necessary fields for the API to create a new user.
+        description: Post the necessary fields for the API to create a new user... random change.
       description: Create a new user.
       security:
         - API Key - 1: []
+      deprecated: true
     parameters: []
 components:
   schemas: {}

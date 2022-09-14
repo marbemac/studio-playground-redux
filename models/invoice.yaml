@@ -1,4 +1,4 @@
-title: invoice
+title: Invoice
 x-stoplight:
   id: fp7kw4bhoagwo
 type: object
@@ -21,3 +21,4 @@ required:
   - invoice_number
   - customer_id
   - billing_address
+description: An invoice object.

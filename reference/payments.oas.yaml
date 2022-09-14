@@ -18,7 +18,7 @@ paths:
         - schema:
             type: string
           in: query
-          name: skip
+          name: limit
       requestBody:
         content:
           application/json:
@@ -27,6 +27,7 @@ paths:
               items:
                 $ref: ../models/invoice.yaml
         description: ''
+      description: Returns a list of invoices.
     post:
       summary: Create Invoice
       operationId: create-invoice
@@ -38,6 +39,7 @@ paths:
           application/json:
             schema:
               $ref: ../models/invoice.yaml
+      x-internal: true
     parameters: []
 components:
   schemas: {}
@@ -51,4 +53,6 @@ components:
         enum:
           - created
           - updated
+          - deleted
         default: created
+      description: One of xyz values.
