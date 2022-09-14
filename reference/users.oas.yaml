@@ -48,7 +48,7 @@ paths:
         - API Key - 1: []
   /users:
     post:
-      summary: Create New User
+      summary: Create a New User
       operationId: post-user
       responses:
         '200':
