@@ -4,7 +4,14 @@ x-stoplight:
 info:
   title: Users API
   version: '1.0'
-servers: []
+  description: Here is a newly added description of the Users API.
+  contact:
+    name: Marc
+    url: 'http://example.com'
+    email: marc@example.com
+servers:
+  - url: 'http://users.dev'
+    description: Development
 paths:
   '/users/{userId}':
     parameters:
