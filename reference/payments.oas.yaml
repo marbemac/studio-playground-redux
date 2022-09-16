@@ -4,6 +4,8 @@ x-stoplight:
 info:
   title: Payments API
   version: '1.0'
+  license:
+    name: Apache 2.0
 servers:
   - url: 'http://localhost:3000'
 paths:
@@ -19,6 +21,7 @@ paths:
           application/json:
             schema:
               $ref: ../models/invoice.yaml
+      x-internal: true
     parameters: []
 components:
   schemas: {}

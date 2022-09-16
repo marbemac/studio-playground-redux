@@ -4,12 +4,15 @@ x-stoplight:
 info:
   title: Users API
   version: '1.0'
+  license:
+    name: MIT
 servers: []
 paths:
   '/users/{userId}':
     parameters:
       - schema:
           type: integer
+          minimum: 0
         name: userId
         in: path
         required: true
@@ -103,3 +106,4 @@ components:
       name: API Key
       type: apiKey
       in: query
+      description: Here is a new description...
