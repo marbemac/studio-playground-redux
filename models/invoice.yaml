@@ -9,7 +9,7 @@ properties:
   amount:
     type: number
   invoice_number:
-    type: string
+    type: number
     readOnly: true
   customer_id:
     type: number
@@ -19,5 +19,4 @@ required:
   - id
   - amount
   - invoice_number
-  - customer_id
   - billing_address
