@@ -5,6 +5,7 @@ x-stoplight:
 properties:
   id:
     type: number
+    description: The user's ID.
     readOnly: true
   name:
     type: string
