@@ -11,7 +11,7 @@ servers:
 paths:
   /payments:
     post:
-      summary: Create Invoice
+      summary: Create an Invoice
       operationId: create-invoice
       responses:
         '200':
