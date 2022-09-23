@@ -52,3 +52,12 @@ components:
           - created
           - updated
         default: created
+      description: One of xyz values.
+  securitySchemes:
+    API Key - 1:
+      name: API Key
+      type: apiKey
+      in: query
+      description: Some description of the security...
+security:
+  - API Key - 1: []
